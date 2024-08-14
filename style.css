@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+/* Mise en forme du Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #fb911f;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+header .navbar li a:hover {
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+    transition: 0.5s;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-reservation {
+    padding: 10px 20px;
+    background: #fb911f;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-reservation:hover {
+    background: #d87710;
+    transition: ease-out;
+}
+
+.banniere {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./pageheader-banner.jpg);
+    background-size: cover;
+}
+
+.banniere .contenu {
+    max-width: 70%;
+    text-align: center;
+}
+
+.banniere .contenu h2 {
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.banniere .contenu p {
+    color: #ffff;
+    font-size: 1,2em;
+}
+
+.btn1 {
+    font-size: 1em;
+    color: #fff;
+    background: #fb911f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn2 {
+    font-size: 1em;
+    color: #fff;
+    background: #2a4963;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn1:hover {
+    letter-spacing: 4px;
+}
+
+.apropos {
+    padding: 100px;
+}
+
+.roro {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.roro .col50 {
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.roro .col50 h2 {
+    margin-bottom: 20px;
+}
+
+.titre {
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre span {
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.roro .col50 image {
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
+
+/* Mise en forme de la partie Menu */
+
+.menu {
+    margin-top: -80px;
+}
+
+.col60 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .contenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.menu .contenu .box {
+    width: 280px;
+    margin: 10px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.menu .titres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .contenu .box .imbox {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.menu .contenu .box .imbox img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .contenu .box .texte {
+    text-align: center;
+    font-weight: 300;
+    color: #111;
+}
+
+.menu .contenu .box .texte h3 {
+    font-weight: 400;
+}
+
+/* Mise en Forme de la Partie nos experts */
+
+.expert {
+    margin-top: 20px;
+}
+
+.expert .contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+.expert .contenu .box {
+    width: 1fr;
+    height: 250px;
+    margin: 2px;
+}
+
+.expert .contenu .box .imbox img {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.expert .contenu .box .text {
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.expert .contenu .box .text h3 {
+    font-weight: 400;
+}
+
+/* Partie Temoignage */
+
+.temoignages {
+    background-image: url(./bg2.jpg);
+    background-size: cover;
+    margin-top: 80px;
+    height: 600px;
+}
+
+.temoignages .contenu {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.temoignages .contenu .box {
+    width: 280px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.temoignages .contenu .box .imbox {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.temoignages .contenu .box .imbox img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.temoignages .contenu .box .text {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.temoignages .contenu .box .text h3 {
+    color: #fb911f;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.temoignages .col60 .titre {
+    color: #fff;
+}
+
+.temoignages .col60 .blanc {
+    color: #fff;
+}
+
+.temoignages .col60 {
+    padding-top: 20px;
+}
+
+/* Partie Contact */
+
+.contact {
+    background-image: url(./img-form.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .formulaire {
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #fff;
+    height: 340px;
+    width: 400px;
+}
+
+.contact .formulaire form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    background-color: #111;
+    background-color: #fff;
+}
+
+.contact .formulaire form input {
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.contact .formulaire form textarea {
+    height: 70px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.contact .formulaire form .btn3 {
+    font-size: 1em;
+    color: #fff;
+    background: #fb911f;
+    border-radius: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.copyright {
+    pad: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background: rgba(228, 222, 222, );
+    text-align: center;
+}
+
+.copyright p:nth-child(1) {
+    color: #333;
+}
+
+.copyright a {
+    color: #fb911f;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
